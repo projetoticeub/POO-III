@@ -1,6 +1,6 @@
 package br.com.pets.adocao.dtos;
 
-import br.com.pets.adocao.Models.Animal;
+import br.com.pets.adocao.models.Animal;
 import br.com.pets.adocao.enums.StatusAdocao;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

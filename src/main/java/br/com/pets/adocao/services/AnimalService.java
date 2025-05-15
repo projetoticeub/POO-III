@@ -1,6 +1,6 @@
 package br.com.pets.adocao.services;
 
-import br.com.pets.adocao.Models.Animal;
+import br.com.pets.adocao.models.Animal;
 import br.com.pets.adocao.dtos.AnimalDTO;
 import br.com.pets.adocao.repositories.AnimalRepository;
 import jakarta.persistence.EntityNotFoundException;

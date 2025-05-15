@@ -1,4 +1,4 @@
-package br.com.pets.adocao.Models;
+package br.com.pets.adocao.models;
 
 import br.com.pets.adocao.dtos.AnimalDTO;
 import br.com.pets.adocao.enums.StatusAdocao;
