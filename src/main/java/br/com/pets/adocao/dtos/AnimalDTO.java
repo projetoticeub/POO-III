@@ -2,12 +2,19 @@ package br.com.pets.adocao.dtos;
 
 import br.com.pets.adocao.Models.Animal;
 import br.com.pets.adocao.enums.StatusAdocao;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public record AnimalDTO(Long id,
+                        @NotBlank
                         String nome,
+                        @NotBlank
                         String tipoAnimal,
+                        @NotBlank
                         String raca,
+                        @NotNull
                         Integer idade,
+                        @NotNull
                         StatusAdocao statusAdocao,
                         String imagem,
                         String descricao) {
