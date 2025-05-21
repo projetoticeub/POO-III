@@ -15,6 +15,7 @@
   <li><a href="#dados-de-teste">5. Banco de Dados de Teste</a></li>
   <li><a href="#executar">6. Como Executar o Projeto</a></li>
   <li><a href="#colecao-postman">7. Coleção Postman</a></li>
+  <li><a href="#tratamento-erros">8. Tratamento de Erros</a></li>
 </ul>
 
 <hr/>
@@ -191,4 +192,15 @@ PUT:  {{ _.url }}/animais/{id}
 DELETE: {{ _.url }}/animais/{id}
 </pre>
 
+
+<h2 id="tratamento-erros">8. ⚠️ Tratamento de Erros e Códigos de Status HTTP</h2>
+
+<p>A API REST do Pet-Adota implementa tratamento global de exceções para garantir respostas padronizadas e compreensíveis em caso de falhas. Os erros são capturados por uma classe <code>@RestControllerAdvice</code> que lida com diferentes tipos de exceções.</p>
+
+<h3>8.1 Códigos de Status Utilizados</h3>
+<ul>
+  <li><strong>400 Bad Request</strong>: Requisição inválida (ex: erro de validação).</li>
+  <li><strong>404 Not Found</strong>: Recurso não encontrado.</li>
+  <li><strong>500 Internal Server Error</strong>: Erro inesperado no servidor.</li>
+</ul>
 <hr/>
